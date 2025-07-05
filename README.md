@@ -1,5 +1,7 @@
 # My App
 
+https://github.com/PLP-MERN-Stack-Development/week-3-react-js-assignment-kgaugelo943.git
+
 A responsive React application with reusable UI components, dark mode support, task management, and data fetching functionality.
 
 ---
