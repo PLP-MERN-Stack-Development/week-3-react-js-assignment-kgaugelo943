@@ -1,71 +1,87 @@
-[![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-2e0aaae1b6195c2367325f4f02e2d04e9abb55f0b24a779b69b11b9e10269abc.svg)](https://classroom.github.com/online_ide?assignment_repo_id=19886199&assignment_repo_type=AssignmentRepo)
-# React.js and Tailwind CSS Assignment
+# My App
 
-This assignment focuses on building a responsive React application using JSX and Tailwind CSS, implementing component architecture, state management, hooks, and API integration.
+A responsive React application with reusable UI components, dark mode support, task management, and data fetching functionality.
 
-## Assignment Overview
+---
 
-You will:
-1. Set up a React project with Vite and Tailwind CSS
-2. Create reusable UI components
-3. Implement state management using React hooks
-4. Integrate with external APIs
-5. Style your application using Tailwind CSS
+## Features
 
-## Getting Started
+✅ Reusable Button, Card, Navbar, Footer components
+✅ Responsive design for mobile, tablet, and desktop
+✅ Dark mode toggle with Tailwind CSS `dark` mode
+✅ Task Manager with add, complete, delete, filter functionality
+✅ Persistent tasks using `useLocalStorage`
+✅ Data fetching from JSONPlaceholder API with search and pagination
+✅ Smooth animations and transitions for interactive elements
 
-1. Accept the GitHub Classroom assignment invitation
-2. Clone your personal repository that was created by GitHub Classroom
-3. Install dependencies:
-   ```
-   npm install
-   ```
-4. Start the development server:
-   ```
-   npm run dev
-   ```
+---
 
-## Files Included
+## Tech Stack
 
-- `Week3-Assignment.md`: Detailed assignment instructions
-- Starter files for your React application:
-  - Basic project structure
-  - Pre-configured Tailwind CSS
-  - Sample component templates
+* React 19
+* React Router
+* Tailwind CSS 4
+* Vite 7
 
-## Requirements
+---
 
-- Node.js (v18 or higher)
-- npm or yarn
-- Modern web browser
-- Code editor (VS Code recommended)
+## Installation
+
+```bash
+npm install
+```
+
+---
+
+## Development
+
+```bash
+npm run dev
+```
+
+The app will be available at `http://localhost:5173`
+
+---
+
+## Build for Production
+
+```bash
+npm run build
+```
+
+---
 
 ## Project Structure
 
 ```
 src/
-├── components/       # Reusable UI components
-├── pages/           # Page components
-├── hooks/           # Custom React hooks
-├── context/         # React context providers
-├── api/             # API integration functions
-├── utils/           # Utility functions
-└── App.jsx          # Main application component
+├── components/     # Reusable UI components
+├── context/        # ThemeContext for dark mode
+├── hooks/          # Custom hooks (e.g., useLocalStorage)
+├── pages/          # Page components (e.g., Home, About)
+├── App.jsx         # Main app component
+└── main.jsx        # Entry point
 ```
 
-## Submission
+---
 
-Your work will be automatically submitted when you push to your GitHub Classroom repository. Make sure to:
+## Available Scripts
 
-1. Complete all required components and features
-2. Implement proper state management with hooks
-3. Integrate with at least one external API
-4. Style your application with Tailwind CSS
-5. Deploy your application and add the URL to your README.md
+* `npm run dev` - Start development server
+* `npm run build` - Build for production
+* `npm run preview` - Preview production build
+* `npm run build:css` - Compile Tailwind CSS
 
-## Resources
+---
 
-- [React Documentation](https://react.dev/)
-- [Tailwind CSS Documentation](https://tailwindcss.com/docs)
-- [Vite Documentation](https://vitejs.dev/guide/)
-- [React Router Documentation](https://reactrouter.com/) 
+## Notes
+
+* Tailwind CSS configured via `tailwind.config.js`
+* Dark mode enabled via class strategy (`dark` class on `<html>`)
+* Uses JSONPlaceholder as a mock API for data fetching
+
+---
+
+## License
+
+[MIT](LICENSE)
